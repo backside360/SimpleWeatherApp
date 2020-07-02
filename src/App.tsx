@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { StoresContext, createStore } from './entities/index';
+import { Routes } from './pages/index';
+import ErrorModal from './molecules/ErrorModal';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <StoresContext.Provider value={createStore()}>
+        <Routes />
+        <ErrorModal />
+      </StoresContext.Provider>
+    </Router>
   );
 }
 
