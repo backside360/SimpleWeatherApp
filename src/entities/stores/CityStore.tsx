@@ -3,7 +3,7 @@ import { TWeather } from '../../api/types';
 
 export class CityStore {
   @observable cities: TWeather[] = [];
-  @observable currentCity: any[] = [];
+  @observable currentCity: any = [];
 
   setCity = (city: TWeather): void => {
     this.cities = [...this.cities, city];
