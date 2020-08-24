@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/SimpleWeatherApp/static/css/main.6e3c36a5.chunk.css",
+    "main.js": "/SimpleWeatherApp/static/js/main.322e5115.chunk.js",
+    "main.js.map": "/SimpleWeatherApp/static/js/main.322e5115.chunk.js.map",
+    "runtime-main.js": "/SimpleWeatherApp/static/js/runtime-main.9d0be1ab.js",
+    "runtime-main.js.map": "/SimpleWeatherApp/static/js/runtime-main.9d0be1ab.js.map",
+    "static/js/2.321a727c.chunk.js": "/SimpleWeatherApp/static/js/2.321a727c.chunk.js",
+    "static/js/2.321a727c.chunk.js.map": "/SimpleWeatherApp/static/js/2.321a727c.chunk.js.map",
+    "static/css/3.c27a359e.chunk.css": "/SimpleWeatherApp/static/css/3.c27a359e.chunk.css",
+    "static/js/3.717c4860.chunk.js": "/SimpleWeatherApp/static/js/3.717c4860.chunk.js",
+    "static/js/3.717c4860.chunk.js.map": "/SimpleWeatherApp/static/js/3.717c4860.chunk.js.map",
+    "static/css/4.07edd988.chunk.css": "/SimpleWeatherApp/static/css/4.07edd988.chunk.css",
+    "static/js/4.2896a1ec.chunk.js": "/SimpleWeatherApp/static/js/4.2896a1ec.chunk.js",
+    "static/js/4.2896a1ec.chunk.js.map": "/SimpleWeatherApp/static/js/4.2896a1ec.chunk.js.map",
+    "index.html": "/SimpleWeatherApp/index.html",
+    "precache-manifest.d3e64144e02cea37fb82ae170bb49b80.js": "/SimpleWeatherApp/precache-manifest.d3e64144e02cea37fb82ae170bb49b80.js",
+    "service-worker.js": "/SimpleWeatherApp/service-worker.js",
+    "static/css/3.c27a359e.chunk.css.map": "/SimpleWeatherApp/static/css/3.c27a359e.chunk.css.map",
+    "static/css/4.07edd988.chunk.css.map": "/SimpleWeatherApp/static/css/4.07edd988.chunk.css.map",
+    "static/css/main.6e3c36a5.chunk.css.map": "/SimpleWeatherApp/static/css/main.6e3c36a5.chunk.css.map",
+    "static/js/3.717c4860.chunk.js.LICENSE.txt": "/SimpleWeatherApp/static/js/3.717c4860.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d0be1ab.js",
+    "static/css/3.c27a359e.chunk.css",
+    "static/js/3.717c4860.chunk.js",
+    "static/css/main.6e3c36a5.chunk.css",
+    "static/js/main.322e5115.chunk.js"
+  ]
+}
