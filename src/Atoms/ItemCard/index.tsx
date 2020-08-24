@@ -28,7 +28,7 @@ export const ItemCard: React.FC<IProps> = ({ data, deleteCity }) => {
     <Card
       title={data.name}
       hoverable
-      style={{ width: '400px', height: '531px', borderRadius: '10px' }}
+      style={{ width: '400px', borderRadius: '10px' }}
       className="weather_card"
     >
       <Row justify="space-between" align="middle" gutter={[20, 48]}>
