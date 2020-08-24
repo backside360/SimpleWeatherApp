@@ -3,18 +3,21 @@
     "experimentalDecorators": true,
     "target": "es5",
     "lib": ["dom"],
-    "allowJs": true,
+
+    "baseUrl": "./",
     "skipLibCheck": true,
+    "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
+
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "preserve",
+    "strict": false
   },
   "include": ["src"]
 }

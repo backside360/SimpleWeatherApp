@@ -1,1 +1,21 @@
 @import '~antd/dist/antd.css';
+
+.ant-layout-header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    189deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(187, 187, 237, 1) 0%,
+    rgba(90, 167, 217, 1) 74%
+  );
+}
+
+.ant-layout-footer {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    189deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(187, 187, 237, 1) 0%,
+    rgba(90, 167, 217, 1) 74%
+  );
+}

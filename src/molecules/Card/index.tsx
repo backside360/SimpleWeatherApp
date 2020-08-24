@@ -1,30 +1,23 @@
 import React from 'react';
-import { Row, Col } from 'antd';
+import { Row } from 'antd';
 import { observer } from 'mobx-react';
 
 import { ItemCard } from '../../Atoms/ItemCard';
-import { IList } from '../../api/types';
+
+import './styles.css';
+import { TWeather } from 'src/api/types';
 
 interface IProps {
-  items: IList[];
-  onClick?: (symbol: string) => void;
+  data: TWeather;
+  deleteCity: () => void;
 }
 
-const CardsList: React.FC<IProps> = ({ items, onClick }) => (
-  <Row justify="space-around" align="stretch" gutter={[32, 32]}>
-    {items.map((elem) => (
-      <Col className="card" key={elem.id}>
-        <ItemCard
-          name={elem.name}
-          price={elem.price}
-          onClick={onClick}
-          id={elem.id}
-        />
-      </Col>
-    ))}
+const CityCard: React.FC<IProps> = ({ data, deleteCity }) => (
+  <Row justify="center" className="content">
+    <ItemCard data={data} deleteCity={deleteCity} />
   </Row>
 );
 
-const Observed = observer(CardsList);
+const Observed = observer(CityCard);
 
-export { Observed as CardsList };
+export { Observed as CityCard };

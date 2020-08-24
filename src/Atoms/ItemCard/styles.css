@@ -1,0 +1,39 @@
+.min_max {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_data {
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.arrow_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete_btn {
+  height: 100%;
+}
+
+.weather_card {
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

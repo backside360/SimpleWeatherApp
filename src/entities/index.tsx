@@ -1,14 +1,14 @@
 import React from 'react';
-import { ItemsStore } from './stores/ItemsStore';
+import { CityStore } from './stores/CityStore';
 import Logger from './stores/Logger';
 
 export type TStore = {
-  ItemsStore: ItemsStore;
+  CityStore: CityStore;
   Logger: typeof Logger;
 };
 
 export const createStore = (): TStore => ({
-  ItemsStore: new ItemsStore(),
+  CityStore: new CityStore(),
   Logger,
 });
 

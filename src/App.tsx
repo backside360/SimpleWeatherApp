@@ -1,19 +1,29 @@
 import React from 'react';
+import { Layout } from 'antd';
+
 import { BrowserRouter as Router } from 'react-router-dom';
 import { StoresContext, createStore } from './entities/index';
 import { Routes } from './pages/index';
-import ErrorModal from './molecules/ErrorModal';
 
+import { Header } from 'src/Layout/Header';
+import { Footer } from 'src/Layout/Footer';
 import './App.css';
+
+const { Content } = Layout;
 
 function App() {
   return (
-    <Router>
-      <StoresContext.Provider value={createStore()}>
-        <Routes />
-        <ErrorModal />
-      </StoresContext.Provider>
-    </Router>
+    <Layout id="rootSection">
+      <Router>
+        <Header />
+        <StoresContext.Provider value={createStore()}>
+          <Content>
+            <Routes />
+          </Content>
+        </StoresContext.Provider>
+        <Footer />
+      </Router>
+    </Layout>
   );
 }
 
