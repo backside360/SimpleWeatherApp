@@ -3,7 +3,7 @@ import { TWeather } from '../../api/types';
 
 export class CityStore {
   @observable cities: TWeather[] = [];
-  @observable currentCity: any = [];
+  @observable currentCity: any[] = [];
 
   setCity = (city: TWeather): void => {
     this.cities = [...this.cities, city];
@@ -18,8 +18,8 @@ export class CityStore {
   };
 
   deleteCity = (city: any): void => {
-    const list = this.currentCity.filter((elem: any) => elem.name !== city);
-    this.currentCity = list;
+    const list = this.cities.filter((elem: any) => elem.name !== city);
+    this.cities = list;
   };
 }
 
