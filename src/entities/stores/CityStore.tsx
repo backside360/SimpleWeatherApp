@@ -19,6 +19,7 @@ export class CityStore {
 
   deleteCity = (city: any): void => {
     const list = this.currentCity.filter((elem: any) => elem.name !== city);
+    this.currentCity = list;
   };
 }
 

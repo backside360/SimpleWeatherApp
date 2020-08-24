@@ -9,7 +9,7 @@ export const api: TAPI = {
     getCity(city: string) {
       return axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`
         )
         .then((res) => res.data);
     },
@@ -18,7 +18,7 @@ export const api: TAPI = {
     getForecast(city: string, days: number) {
       return axios
         .get(
-          `http://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&cnt=${days}&appid=${key}`
+          `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&cnt=${days}&appid=${key}`
         )
         .then((res) => res.data)
         .catch((err) => {
